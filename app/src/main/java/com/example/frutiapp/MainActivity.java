@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         if(consulta.moveToFirst()){
             String temp_nombre = consulta.getString(0);
             String tem_score = consulta.getString(1);
-            tv_bestScore.setText("Record: "+tem_score+ " de "+ tem_score);
+            tv_bestScore.setText("Record: "+temp_nombre+ " de "+ tem_score);
             BD.close();
         }else {
             BD.close();
